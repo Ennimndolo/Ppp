@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="email"],
+        input[type="password"] {
+            padding: 8px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            height: fit-content;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .footer a{
+            background-color: #007bff;
+            color: #fff;
+      
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .footer a:hover{
+        text-decoration: none;
+        background-color: #1967b9;
+        }
+        .container h1{
+            border-bottom: 1px solid navy;
+            padding-bottom: 20px;
+        }
+        .wraaper{
+       
+        }
+        .logo{
+            width: 4em;
+            height: 3.8em;
+            border-radius: 2em;
+            padding: 0;
+        }
+        .email, .password{
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class Registry System <br> Login</h1>
+       
+        <form action="/login" method="post">
+            <div class="wraaper">
+                <img class="logo" src="logo1.png" alt="">
+            <label for="email" class="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="@mubas.ac.mw" required>
+            
+            <label for="password" class="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="footer">
+            <input type="submit" value="Login">
+            <a href="register_user.html">Activate account</a>
+        </span>
+        <a href=#>Forgot_password?</a>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
